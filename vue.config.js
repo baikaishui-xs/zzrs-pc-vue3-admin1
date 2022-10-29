@@ -1,0 +1,13 @@
+const path = require('path')
+
+module.exports = {
+  pluginOptions: {
+    'style-resources-loader': {
+      preProcessor: 'scss',
+      patterns: [
+        path.join(__dirname, './src/theme.scss'),
+        path.join(__dirname, './src/styles/mixins.scss')
+      ]
+    }
+  }
+}
